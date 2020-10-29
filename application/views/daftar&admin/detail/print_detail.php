@@ -4,7 +4,7 @@
 <head>
     <title>Print Detail Siswa</title>
 </head>
-<table border="1" align="center">
+<table align="center">
     <tr>
         <td><img src="<?= base_url('assets/'); ?>images/logo fix.png" width="70" height="70"></td>
         <td width="500">
@@ -22,7 +22,7 @@
     </tr>
 </table>
 <br>
-<table border="1" align="center">
+<table align="center">
     <tr>
         <td width="575">
             <center> <b>DATA SISWA</b><br>
@@ -31,7 +31,7 @@
         </td>
     </tr>
 </table>
-<table border="1" align="center">
+<table align="center">
     <tr>
         <td width="75">Tingkat</td>
         <td width="205">:</td>
@@ -39,17 +39,17 @@
         <td width="205">:</td>
     </tr>
 </table>
-<table border="1" align="center">
+<table align="center">
     <tr>
         <td width="75">Nama</td>
-        <td width="500">:</td>
+        <td width="490">:</td>
     </tr>
     <tr>
         <td width="75">Gender</td>
-        <td>:</td>
+        <td width="490">:</td>
     </tr>
 </table>
-<table border="1" align="center">
+<table align="center">
     <tr>
         <td width="75">Asal Sekolah</td>
         <td width="205">:</td>
@@ -57,39 +57,41 @@
         <td width="205">:</td>
     </tr>
     <tr>
-        <td width="75">NO SERI IJAZAH</td>
+        <td width="75">NO IJAZAH SMP/MTs</td>
         <td width="205">:</td>
-        <td width="75">NO SERI SKHUN SMP/MTs</td>
+        <td width="75">NO SKHUN SMP/MTs</td>
         <td width="205">:</td>
     </tr>
     <tr>
         <td width="75">NO UN SMP/MTs</td>
         <td width="205">:</td>
-        <td width="75">NIK</td>
-        <td width="205">:</td>
     </tr>
 </table>
-<table border="1" align="center">
+<table align="center">
+    <tr>
+        <td width="75">NIK</td>
+        <td width=" 490">:</td>
+    </tr>
     <tr>
         <td width="75">TTL</td>
-        <td width="500">:</td>
+        <td width=" 490">:</td>
     </tr>
     <tr>
         <td width="75">Alamat Tinggal</td>
-        <td width="500">:</td>
+        <td width=" 490">:</td>
     </tr>
 </table>
-<table border="1" align="center">
+<table align="center">
     <tr>
         <td width="75">Alat Transportasi</td>
         <td width="205">:</td>
-        <td width="75">Jenis Tinggal</td>
+        <td width="75">Ukuran Pakaian</td>
         <td width="205">:</td>
     </tr>
     <tr>
-        <td width="75">Rencana Tinggal</td>
+        <td width="75">Jenis Tinggal</td>
         <td width="205">:</td>
-        <td width="75">Ukuran Pakaian</td>
+        <td width="75">Rencana Tinggal</td>
         <td width="205">:</td>
     </tr>
     <tr>
@@ -103,6 +105,121 @@
         <td width="205">:</td>
         <td width="75">No KKS</td>
         <td width="205">:</td>
+    </tr>
+</table>
+<br>
+<table align="center">
+    <tr>
+        <td width="575">
+            <center> <b>DATA ORTU/WALI</b><br>
+                <center>
+        </td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <td width="287">
+            <center> <b>DATA AYAH KANDUNG</b><br>
+                <center>
+        </td>
+        <td width="287">
+            <center> <b>DATA IBU KANDUNG</b><br>
+                <center>
+        </td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <td width="75">Nama Ayah</td>
+        <td width="205">:</td>
+        <td width="75">Nama Ibu</td>
+        <td width="205">:</td>
+    </tr>
+    <tr>
+        <td width="75">Lahir</td>
+        <td width="205">:</td>
+        <td width="75">Lahir</td>
+        <td width="205">:</td>
+    </tr>
+    <tr>
+        <td width="75">Pekerjaan</td>
+        <td width="205">:</td>
+        <td width="75">Pekerjaan</td>
+        <td width="205">:</td>
+    </tr>
+    <tr>
+        <td width="75">Pendidikan</td>
+        <td width="205">:</td>
+        <td width="75">Pendidikan</td>
+        <td width="205">:</td>
+    </tr>
+    <tr>
+        <td width="75">Penghasilan Bulanan</td>
+        <td width="205">:</td>
+        <td width="75">Penghasilan Bulanan</td>
+        <td width="205">:</td>
+    </tr>
+</table>
+
+<table align="center">
+    <tr>
+        <td width="287">
+            <center> <b>DATA WALI</b><br>
+                <center>
+        </td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <td width="75">Nama Wali</td>
+        <td width="205">:</td>
+    </tr>
+    <tr>
+        <td width="75">Lahir</td>
+        <td width="205">:</td>
+    </tr>
+    <tr>
+        <td width="75">Pekerjaan</td>
+        <td width="205">:</td>
+    </tr>
+    <tr>
+        <td width="75">Pendidikan</td>
+        <td width="205">:</td>
+    </tr>
+    <tr>
+        <td width="75">Penghasilan Bulanan</td>
+        <td width="205">:</td>
+    </tr>
+</table>
+<br>
+<table align="center">
+    <tr>
+        <td width="287">
+            <center> <b>DATA PERIODIK</b><br>
+                <center>
+        </td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <td width="70">Tinggi Badan</td>
+        <td width="390">:</td>
+    </tr>
+    <tr>
+        <td width="70">Berat Badan</td>
+        <td width="390">:</td>
+    </tr>
+    <tr>
+        <td width="70">Jarak Ke Sekolah</td>
+        <td width="390">:</td>
+    </tr>
+    <tr>
+        <td width="180">Waktu Tempuh Ke Sekolah</td>
+        <td width="390">:</td>
+    </tr>
+    <tr>
+        <td width="160">Jumlah Sudara Kandung</td>
+        <td width="390">:</td>
     </tr>
 </table>
 
