@@ -317,7 +317,7 @@
                                 </div>
                             <?php endif ?>
                             <a href="<?= base_url(); ?>admin_dash/edit/<?= $siswa["id"]; ?>"><button type="button" class="mb-xs mt-xs mr-xs btn-sm btn btn-info">Edit Data Siswa</button></a>
-                            <a href="" target="_blank" type="button" class="mb-xs mt-xs mr-xs btn-sm btn btn-warning"><i class="fa fa-print"></i> Print Data</a>
+                            <a href="<?= base_url(); ?>admin_dash/print_siswa/<?= $siswa["id"]; ?>" target="_blank" type="button" class="mb-xs mt-xs mr-xs btn-sm btn btn-warning"><i class="fa fa-print"></i> Print Data</a>
                             <a href="<?= base_url(); ?>admin_dash/pendaftar_proses"><button type="button" class="mb-xs mt-xs mr-xs btn-sm btn btn-primary">Kembali Ke Tabel Pendaftar</button></a>
 
                         </div>

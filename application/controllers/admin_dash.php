@@ -241,8 +241,9 @@ class admin_dash extends CI_Controller
         $this->load->view('templates/footer2');
     }
 
-    public function print_siswa()
+    public function print_siswa($id)
     {
-        $this->load->view('daftar&admin/detail/print_detail');
+        $data['siswa'] = $this->model_siswa->getsiswabyid($id);
+        $this->load->view('daftar&admin/detail/print_detail', $data);
     }
 }
