@@ -1,6 +1,11 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
+use Spipu\Html2Pdf\Html2Pdf;
+use Spipu\Html2Pdf\Exception\Html2PdfException;
+use Spipu\Html2Pdf\Exception\ExceptionFormatter;
+use Spipu\Html2Pdf\CssConverter;
+
 class admin_dash extends CI_Controller
 {
     private $_table = "admin";
@@ -243,7 +248,30 @@ class admin_dash extends CI_Controller
 
     public function print_siswa($id)
     {
-        $data['siswa'] = $this->model_siswa->getsiswabyid($id);
-        $this->load->view('daftar&admin/detail/print_detail', $data);
+        if (isset($_POST['test'])) {
+            echo '<pre>';
+            echo htmlentities(print_r($_POST, true));
+            echo '</pre>';
+            exit;
+        }
+        try {
+            ob_start();
+            $data['siswa'] = $this->model_siswa->getsiswabyid($id);
+            $this->load->view('daftar&admin/detail/print_detail', $data);
+            $html = ob_get_contents();
+            $content = ob_get_clean();
+
+            $html2pdf = new Html2Pdf('P', 'A4', 'en', false, 'UTF-8', array(5, 5, 5, 5));
+            $html2pdf->pdf->SetDisplayMode('fullpage');
+            $html2pdf->setTestTdInOnePage(false);
+            $html2pdf->writeHTML($content);
+            //$Nama = $this->db->get_where('siswa', ['Nama_Siswa', 'id' => $id]);
+            $html2pdf->output('Detail Siswa' . '.pdf');
+        } catch (Html2PdfException $e) {
+            $html2pdf->clean();
+
+            $formatter = new ExceptionFormatter($e);
+            echo $formatter->getHtmlMessage();
+        }
     }
 }
